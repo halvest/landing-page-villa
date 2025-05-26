@@ -1,46 +1,37 @@
-import className from 'classnames';
+import { Slot } from "@radix-ui/react-slot";
+import classNames from "classnames";
+import type { ButtonHTMLAttributes, ReactNode } from "react";
 
 type IButtonProps = {
   xl?: boolean;
-  children: string;
-};
+  children: ReactNode;
+  className?: string;
+  asChild?: boolean;
+} & ButtonHTMLAttributes<HTMLButtonElement>;
 
-const Button = (props: IButtonProps) => {
-  const btnClass = className({
-    btn: true,
-    'btn-xl': props.xl,
-    'btn-base': !props.xl,
-    'btn-primary': true,
-  });
+const Button = ({
+  xl,
+  children,
+  className,
+  asChild = false,
+  ...rest
+}: IButtonProps) => {
+  const Comp = asChild ? Slot : "button";
+
+  const btnClass = classNames(
+    "inline-block rounded-full text-center font-semibold transition duration-200",
+    {
+      "text-lg py-2 px-4": !xl,
+      "text-xl py-4 px-6 font-bold": xl,
+      "bg-primary-500 hover:bg-primary-600 text-white": true,
+    },
+    className,
+  );
 
   return (
-    <div className={btnClass}>
-      {props.children}
-
-      <style jsx>
-        {`
-          .btn {
-            @apply inline-block rounded-md text-center;
-          }
-
-          .btn-base {
-            @apply text-lg font-semibold py-2 px-4;
-          }
-
-          .btn-xl {
-            @apply font-extrabold text-xl py-4 px-6;
-          }
-
-          .btn-primary {
-            @apply text-white bg-primary-500;
-          }
-
-          .btn-primary:hover {
-            @apply bg-primary-600;
-          }
-        `}
-      </style>
-    </div>
+    <Comp className={btnClass} {...rest}>
+      {children}
+    </Comp>
   );
 };
 

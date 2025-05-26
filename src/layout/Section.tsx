@@ -1,31 +1,39 @@
-import type { ReactNode } from 'react';
+import type { ReactNode } from "react";
 
 type ISectionProps = {
+  id?: string;
   title?: string;
   description?: string;
   yPadding?: string;
   children: ReactNode;
 };
 
-const Section = (props: ISectionProps) => (
-  <div
-    className={`mx-auto max-w-screen-lg px-3 ${
-      props.yPadding ? props.yPadding : 'py-16'
-    }`}
+const Section = ({
+  id,
+  title,
+  description,
+  yPadding = "py-16",
+  children,
+}: ISectionProps) => (
+  <section
+    id={id}
+    className={`mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8 ${yPadding}`}
   >
-    {(props.title || props.description) && (
-      <div className="mb-12 text-center">
-        {props.title && (
-          <h2 className="text-4xl font-bold text-gray-900">{props.title}</h2>
+    {(title || description) && (
+      <header className="mx-auto mb-12 max-w-4xl text-center">
+        {title && (
+          <h2 className="text-4xl font-extrabold leading-tight text-[#4B3F35]">
+            {title}
+          </h2>
         )}
-        {props.description && (
-          <div className="mt-4 text-xl md:px-20">{props.description}</div>
+        {description && (
+          <p className="mt-4 text-lg text-[#6B5844] md:px-10">{description}</p>
         )}
-      </div>
+      </header>
     )}
 
-    {props.children}
-  </div>
+    {children}
+  </section>
 );
 
 export { Section };
