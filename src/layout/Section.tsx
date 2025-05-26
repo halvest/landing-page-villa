@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { ReactNode } from 'react';
 
 type ISectionProps = {
   id?: string;
@@ -12,7 +12,7 @@ const Section = ({
   id,
   title,
   description,
-  yPadding = "py-16",
+  yPadding = 'py-16',
   children,
 }: ISectionProps) => (
   <section

@@ -1,8 +1,8 @@
-import { AppConfig } from "../utils/AppConfig";
+import { AppConfig } from '../utils/AppConfig';
 
 const FooterCopyright = () => (
   <div className="footer-copyright">
-    © Copyright {new Date().getFullYear()} {AppConfig.title}. Made with{" "}
+    © Copyright {new Date().getFullYear()} {AppConfig.title}. Made with{' '}
     <a href="https://haspro.me">Haspro Agency</a>.
     {/*
      * PLEASE READ THIS SECTION

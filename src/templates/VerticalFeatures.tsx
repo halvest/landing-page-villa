@@ -1,34 +1,34 @@
-import { VerticalFeatureRow } from "../feature/VerticalFeatureRow";
-import { Section } from "../layout/Section";
+import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
+import { Section } from '../layout/Section';
 
 const features = [
   {
-    title: "Investasi Villa Mewah di Tengah Kota Jogja",
+    title: 'Investasi Villa Mewah di Tengah Kota Jogja',
     description:
-      "Miliki unit eksklusif di Seturan – Sleman, hanya Rp375 juta! Dapat 1 kamar tidur, kamar mandi, pantry, & kolam renang privat. Full furnished dan siap pakai.",
-    image: "/assets/images/villa1.png",
-    imageAlt: "Tampak luar villa Lodji Svarga 2 di Seturan",
+      'Miliki unit eksklusif di Seturan – Sleman, hanya Rp375 juta! Dapat 1 kamar tidur, kamar mandi, pantry, & kolam renang privat. Full furnished dan siap pakai.',
+    image: '/assets/images/villa1.png',
+    imageAlt: 'Tampak luar villa Lodji Svarga 2 di Seturan',
   },
   {
-    title: "Pasif Income hingga Rp75 Juta/Tahun",
+    title: 'Pasif Income hingga Rp75 Juta/Tahun',
     description:
-      "Dapatkan potensi pendapatan pasif hingga Rp6 juta per bulan. ROI tinggi, balik modal hanya dalam 5 tahun. Didukung akta notaris & sistem pengelolaan profesional.",
-    image: "/assets/images/interior.png",
-    imageAlt: "Interior elegan villa lengkap dengan furniture premium",
+      'Dapatkan potensi pendapatan pasif hingga Rp6 juta per bulan. ROI tinggi, balik modal hanya dalam 5 tahun. Didukung akta notaris & sistem pengelolaan profesional.',
+    image: '/assets/images/interior.png',
+    imageAlt: 'Interior elegan villa lengkap dengan furniture premium',
   },
   {
-    title: "Bebas Ribet – Tim Profesional Kelola Unit Anda",
+    title: 'Bebas Ribet – Tim Profesional Kelola Unit Anda',
     description:
-      "Anda tidak perlu urus penyewa atau operasional harian. Semua dikelola penuh oleh manajemen berpengalaman. Anda cukup terima hasilnya.",
-    image: "/assets/images/bedroom.png",
-    imageAlt: "Kamar tidur villa yang dirancang fungsional dan nyaman",
+      'Anda tidak perlu urus penyewa atau operasional harian. Semua dikelola penuh oleh manajemen berpengalaman. Anda cukup terima hasilnya.',
+    image: '/assets/images/bedroom.png',
+    imageAlt: 'Kamar tidur villa yang dirancang fungsional dan nyaman',
   },
   {
-    title: "Bonus Menggiurkan untuk Investor Awal",
+    title: 'Bonus Menggiurkan untuk Investor Awal',
     description:
-      "Booking fee hanya Rp5 juta dan 4 unit pertama mendapat harga launching spesial. Dapat juga 12x free stay tiap tahun selama 20 tahun. Investasi dengan banyak bonus!",
-    image: "/assets/images/villa2.png",
-    imageAlt: "Private pool villa Lodji Svarga 2 cocok untuk relaksasi",
+      'Booking fee hanya Rp5 juta dan 4 unit pertama mendapat harga launching spesial. Dapat juga 12x free stay tiap tahun selama 20 tahun. Investasi dengan banyak bonus!',
+    image: '/assets/images/villa2.png',
+    imageAlt: 'Private pool villa Lodji Svarga 2 cocok untuk relaksasi',
   },
 ];
 

@@ -1,6 +1,6 @@
-import { Slot } from "@radix-ui/react-slot";
-import classNames from "classnames";
-import type { ButtonHTMLAttributes, ReactNode } from "react";
+import { Slot } from '@radix-ui/react-slot';
+import classNames from 'classnames';
+import type { ButtonHTMLAttributes, ReactNode } from 'react';
 
 type IButtonProps = {
   xl?: boolean;
@@ -16,14 +16,14 @@ const Button = ({
   asChild = false,
   ...rest
 }: IButtonProps) => {
-  const Comp = asChild ? Slot : "button";
+  const Comp = asChild ? Slot : 'button';
 
   const btnClass = classNames(
-    "inline-block rounded-full text-center font-semibold transition duration-200",
+    'inline-block rounded-full text-center font-semibold transition duration-200',
     {
-      "text-lg py-2 px-4": !xl,
-      "text-xl py-4 px-6 font-bold": xl,
-      "bg-primary-500 hover:bg-primary-600 text-white": true,
+      'text-lg py-2 px-4': !xl,
+      'text-xl py-4 px-6 font-bold': xl,
+      'bg-primary-500 hover:bg-primary-600 text-white': true,
     },
     className,
   );

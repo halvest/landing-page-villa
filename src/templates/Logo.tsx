@@ -5,8 +5,8 @@ type ILogoProps = {
 const Logo = ({ xl }: ILogoProps) => {
   const size = xl ? 44 : 32;
   const fontStyle = xl
-    ? "font-bold text-3xl tracking-tight"
-    : "font-semibold text-xl";
+    ? 'font-bold text-3xl tracking-tight'
+    : 'font-semibold text-xl';
 
   return (
     <span

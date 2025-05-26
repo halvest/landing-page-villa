@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import classNames from "classnames";
-import Image from "next/image";
+import classNames from 'classnames';
+import Image from 'next/image';
 
 type VerticalFeatureRowProps = {
   title: string;
@@ -19,10 +19,10 @@ const VerticalFeatureRow = ({
   reverse,
 }: VerticalFeatureRowProps) => {
   const layoutClass = classNames(
-    "mt-20",
-    "flex flex-col-reverse sm:flex-row items-center gap-8",
+    'mt-20',
+    'flex flex-col-reverse sm:flex-row items-center gap-8',
     {
-      "sm:flex-row-reverse": reverse,
+      'sm:flex-row-reverse': reverse,
     },
   );
 

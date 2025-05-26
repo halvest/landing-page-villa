@@ -1,20 +1,20 @@
-"use client";
+'use client';
 
-import "swiper/css";
-import "swiper/css/effect-fade";
+import 'swiper/css';
+import 'swiper/css/effect-fade';
 
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
-import { Autoplay, EffectFade } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
+import { Autoplay, EffectFade } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Background } from "../background/Background";
-import { Button } from "../button/Button";
-import { Section } from "../layout/Section";
-import { NavbarTwoColumns } from "../navigation/NavbarTwoColumns";
-import { Logo } from "./Logo";
+import { Background } from '../background/Background';
+import { Button } from '../button/Button';
+import { Section } from '../layout/Section';
+import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
+import { Logo } from './Logo';
 
-const imageUrls = ["/assets/images/9.svg", "/assets/images/10.svg"];
+const imageUrls = ['/assets/images/9.svg', '/assets/images/10.svg'];
 
 const Hero = () => {
   const ref = useRef(null);
@@ -81,7 +81,7 @@ const Hero = () => {
           className="flex min-h-[calc(100vh-80px)] flex-col items-center justify-center px-4 text-center"
           style={{ y: textTranslateY, opacity }}
         >
-          <div className="mx-auto max-w-2xl rounded-3xl border border-white/10 bg-white/10 px-6 py-12 text-white backdrop-blur-sm shadow-2xl sm:px-10 sm:py-16">
+          <div className="mx-auto max-w-2xl rounded-3xl border border-white/10 bg-white/10 px-6 py-12 text-white shadow-2xl backdrop-blur-sm sm:px-10 sm:py-16">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
